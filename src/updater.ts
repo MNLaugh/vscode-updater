@@ -139,7 +139,7 @@ class Updater {
    */
   private async downloadLatest(version: string): Promise<string> {
     const url =
-      `https://vscode.download.prss.microsoft.com/dbazure/download/stable/ea1445cc7016315d0f5728f8e8b12a45dc0a7286/VSCode-win32-x64-${version}.zip`;
+      `https://code.visualstudio.com/sha/download?build=stable&os=win32-x64-archive`;
     const archivePath = normalize(
       `${tempDir}\\VSCode-win32-x64-${version}.zip`,
     );
