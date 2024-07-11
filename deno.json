@@ -1,0 +1,23 @@
+{
+  "lock": false,
+  "tasks": {
+    "check": "deno lint && deno check **/*.ts",
+    "start": "export DEBUG=true && deno run --unstable-ffi -A --watch vscode-updater.ts",
+    "compile": "C:\\Users\\nicol\\.deno\\bin\\deno.old.exe compile --no-terminal -A --unstable .\\vscode-updater.ts"
+  },
+  "lint": { "rules": { "tags": ["recommended"] } },
+  "fmt": {
+    "indentWidth": 2,
+    "semiColons": true,
+    "proseWrap": "never",
+    "include": ["src/", "vscode-updater.ts"],
+    "exclude": []
+  },
+  "imports": {
+    "systray/": "https://deno.land/x/systray@v0.3.0/",
+    "notify/": "https://deno.land/x/deno_notify@1.4.3/ts/",
+    "path": "https://deno.land/std@0.224.0/path/mod.ts",
+    "zip": "https://deno.land/x/zip@v1.2.5/mod.ts",
+    "defer" : "https://deno.land/x/defer@0.6.0/mod.ts"
+  }
+}
